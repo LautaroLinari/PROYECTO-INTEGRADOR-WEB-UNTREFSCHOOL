@@ -5,10 +5,9 @@ module.exports = {
     screens: {
       xm: '0px',
       sm: '320px',
-      md: '821px',
+      md: '827px',
       lg: '976px',
       xl: '1024',
-      xl2: '3000px',
     },
     colors:{
       'naranja': '#FC7300',
@@ -31,7 +30,10 @@ module.exports = {
     extend:{
         height: {
           '128': '32rem',
-        }
+        },
+        backgroundImage: {
+          'fondo-libro': "url('./assets/img/fondo_libros.jpg')",
+        },
       },
     },
   plugins: [],
