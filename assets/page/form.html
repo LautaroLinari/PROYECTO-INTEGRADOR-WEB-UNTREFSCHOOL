@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripcion y Author -->
+    <meta name="description" content="proyecto-integrador-frontend" author="lautaro-linari">
+    <title>UntrefSchool</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../dist/form.css">
+    <!-- Links -->
+    <link rel="shortcut icon" href="../assets/icons/school.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h2>UntrefSchool</h2>
+                <ul>
+                    <li><a href="../../src/index.html">Inicio</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Formulario -->
+    <main>
+        <form target="_blank" action="https://formsubmit.co/lautarolinari18@hotmail.com" method="POST">
+            <h2>CONTACTO:</h2>
+            <input type="text" name="nombre" placeholder="Nombre Completo"  required/>
+            <input type="text" name="correo" id="correo" placeholder="Correo Electronico"  required/>
+            <input type="tel" name="tel" id="tel" placeholder="Telefono (Opcional)"/>
+            <textarea name="mensaje" id=""  placeholder="Escriba su asunto aqui..." required></textarea>
+            <input type="submit" id="boton" value="ENVIAR" onclick="validarCorreo(document.getElementById('correo').value)"/>
+        </form>
+    </main>
+
+
+    <!-- Funcion que valida email -->
+    <script>
+      function validarCorreo(correo){
+        var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        var esValido = expReg.test(correo);
+
+        if(esValido == true){
+          console.log('correo valido');
+        } else{
+          alert('El email NO es valido.');
+        }
+      }
+    </script>
+</body>
+</html>

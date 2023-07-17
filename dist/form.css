@@ -1,0 +1,95 @@
+*{
+    font-family: 'Belanosima', sans-serif;
+}
+
+body{
+    background: #181823;
+    background-size:100vw 100vh;
+    margin:0;
+    background-attachment:fixed;
+
+  }
+
+  header{
+    background: #00425A;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .navbar h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  header h2{
+    color: #EFF5F5;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  header nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  header nav ul li a{
+    text-decoration: none;
+    color: #EFF5F5;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+  header nav ul li a:hover{
+    background: #FC7300;
+    color: #181823;
+  }
+
+  form{
+    width:500px;
+    margin:0 auto;
+    background:#1F8A70;
+    padding:10px 20px;
+    box-sizing:border-box;
+    margin-top:20px;
+    border-radius:10px;
+  }
+  h2{
+    color:#EFF5F5;
+    text-align:center;
+    margin:0;
+    font-size:30px;
+    margin-bottom:30px;
+    
+  }
+  input , textarea{
+    width:100%;
+    margin-bottom:30px;
+    padding:7px;
+    box-sizing:border-box;
+    font-size:17px;
+    border:none;
+  }
+  textarea{
+    max-height:200px;
+    max-width:100%;
+  }
+  #boton{
+    background:#181823;
+    color:#EFF5F5;
+    padding:20px;
+  }
+  #boton:hover{
+    background:#00425A;
+    color:#FC7300;
+    cursor:pointer;
+  }
+
+  @media (max-width:480px){
+    form{
+      width:100%;
+    }
+  }
+  
