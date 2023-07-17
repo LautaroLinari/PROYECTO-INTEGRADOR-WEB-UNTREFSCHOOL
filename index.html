@@ -18,7 +18,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                        xm: '0px',
+                        sm: '320px',
+                        md: '840px',
+                        lg: '1024px',
+                    },
+                    colors:{
+                        'naranja': '#FC7300',
+                        'verde': '#1F8A70',
+                        'marino': '#00425A',
+                        'negro': '#181823',
+                        'blanco': '#EFF5F5',
+                        'gris': '#fff666',
+                    },
+                    fontFamily:{
+                        sans: ['Poppins', 'sans-serif'],
+                        sans2: ['Belanosima', 'sans-serif'],
+                    },
+                    variants:{
+                    extend: {
+                        display: ['group-focus'],
+                        opacity: ['group-focus'],
+                        inset: ['group-focus'],
+                        },
+                    },
+                    extend:{
+                        height: {
+                        '128': '32rem',
+                        },
+                        backgroundImage: {
+                        'fondo-libro': "url('./assets/img/fondo_libros.jpg')",
+                        },
+                    },
+                },
+            }
+    </script>
 
 </head>
 <body class="bg-blanco">
