@@ -675,8 +675,8 @@ video {
   background-color: rgb(24 24 35 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/assets\/img\/fondo_libros\.jpg\'\)\] {
-  background-image: url('../assets/img/fondo_libros.jpg');
+.bg-\[url\(\'\.\/assets\/img\/fondo_libros\.jpg\'\)\] {
+  background-image: url('./assets/img/fondo_libros.jpg');
 }
 
 .bg-cover {
@@ -863,7 +863,7 @@ video {
   opacity: 1;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 821px) {
   .md\:flex {
     display: flex;
   }
