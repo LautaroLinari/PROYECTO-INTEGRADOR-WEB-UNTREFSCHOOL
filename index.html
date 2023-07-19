@@ -49,9 +49,6 @@
                         px: {
                             '2,5': '0.6 rem',
                         },
-                        backgroundImage: {
-                            'fondo-libro': "url('./assets/img/fondo_libros.jpg')",
-                        },
                         screens: {
                         'xm': '0px',
                         'sm': '320px',
@@ -102,14 +99,17 @@
     </header>
 
 
-    <main id="inicio">
-        <!-- Titulo -->
-        <div class="bg-[url('./assets/img/fondo_libros.jpg')] w-full h-128 bg-cover bg-no-repeat bg-left-bottom bg-fixed flex items-center justify-center">
-            <h1 class="text-blanco font-bold text-2xl md:text-3xl text-center drop-shadow-xl font-sans2"> Instituto de Educación Primaria </h1>
-        </div>
-        <div class="border-t"></div>
+    <main>
+        <!-- Titulo/Inicio de Pagina -->
+        <section id="inicio">
+            <!-- Llame la img de forma arbitraria-->
+            <div class="bg-[url('./assets/img/fondo_libros.jpg')] w-full h-128 bg-cover bg-no-repeat bg-left-bottom bg-fixed flex items-center justify-center">
+                <h1 class="text-blanco font-bold text-2xl md:text-3xl text-center drop-shadow-xl font-sans2"> Instituto de Educación Primaria </h1>
+            </div>
+            <div class="border-t"></div>
+        </section>
 
-        <!-- Quienes Somos? -->
+        <!-- ¿Quiénes Somos? -->
         <section class="py-16 px-6" id="quienes-somos">
             <h2 class="text-negro font-sans font-bold text-2xl md:text-3xl mx-2 mb-10 text-center md:text-start">¿Quiénes Somos?</h2>
 
@@ -120,7 +120,7 @@
         </section>
         <div class="border-t"></div>
 
-        <!-- ¿Porque elegirnos? -->
+        <!-- ¿Por qué elegirnos? -->
         <section class= "py-16 px-6" id="porq-elegirnos">
             <h2 class="text-negro font-sans font-bold text-2xl md:text-3xl mx-2 mb-10 text-center md:text-end">¿Por qué elegirnos?</h2>
             <div class="bg-blanco w-full flex flex-col items-center justify-evenly md:flex-row">
@@ -143,7 +143,7 @@
         </section>
         <div class="border-t"></div>
         
-        <!-- Ultimas Noticias -->
+        <!-- Últimas Noticias -->
         <section class="py-20 px-6" id="news">
             <h2 class="text-negro font-sans font-bold text-3xl text-center mb-10">Últimas Noticias</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-3">
@@ -163,16 +163,19 @@
     <!-- Footer -->
     <footer class="py-16 px-6 bg-gradient-to-r from-marino to-verde" id="footer">
         <div class="grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-4">
+            <!-- Redes -->
             <div class="flex flex-col">
                 <h2 class="font-sans2 text-center text-2xl md:text-3xl text-blanco font-bold mb-6">Redes Sociales</h2>
                 <a target="_blank" href="https://www.instagram.com/untref/?hl=es" class="text-blanco p-1 text-base md:text-lg text-center font-semibold mb-8 hover:text-naranja" rel="noreferrer"><img src="./assets/icons/instagram.png" alt="icono_instagram" class="text-center m-auto w-auto">Instagram</a>
                 <a target="_blank" href="https://twitter.com/UNTREF?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-blanco p-1 text-base md:text-lg text-center font-semibold mb-8 hover:text-naranja" rel="noreferrer"><img src="./assets/icons/twitter.png" alt="icono_twitter" class="text-center m-auto w-auto">Twitter</a>
                 <a target="_blank" href="https://www.facebook.com/untref/?locale=es_LA" class="text-blanco p-1 text-base md:text-lg text-center font-semibold mb-8 hover:text-naranja" rel="noreferrer"><img src="./assets/icons/facebook.png" alt="icono_facebook" class="text-center m-auto w-auto">Facebook</a>
             </div>
+            <!-- Mapa -->
             <div class="flex flex-col">
                 <h2 class="font-sans2 text-center text-2xl md:text-3xl text-blanco font-bold mb-6">UntrefSchool</h2>
                 <iframe src="https://www.google.com/maps/d/embed?mid=1ujAlRihEdkGF6XSk-_sRt01Yo1k&hl=es_419&ehbc=2E312F" width="320" height="360" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mb-8"></iframe>
             </div>
+            <!-- Contacto -->
             <div class="flex flex-col">
                 <h2 class="font-sans2 text-center text-2xl md:text-3xl text-blanco font-bold mb-6">Contacto</h2>
                 <p class="font-sans text-center text-2xl text-blanco font-semibold mb-10">Email: UntrefSchool@gmail.com</p>
