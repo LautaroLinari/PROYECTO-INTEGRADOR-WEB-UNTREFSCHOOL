@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripcion y Author -->
+    <meta name="description" content="proyecto-integrador1-frontend" author="lautaro-linari">
+    <title>UntrefSchool</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- Links -->
+    <link rel="shortcut icon" href="./assets/icons/school.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind.Config, ya que con CDN no se implementa el archivo tailwind.config.js-->
+    <script>
+        tailwind.config = {
+            theme: {
+                    colors:{
+                        'naranja': '#FC7300',
+                        'verde': '#1F8A70',
+                        'marino': '#00425A',
+                        'negro': '#181823',
+                        'blanco': '#EFF5F5',
+                        'gris': '#fff666',
+                    },
+                    fontFamily:{
+                        'sans1': ['Poppins', 'sans-serif'],
+                        'sans2': ['Belanosima', 'sans-serif'],
+                    },
+                    variants:{
+                    extend: {
+                            display: ['group-focus'],
+                            opacity: ['group-focus'],
+                            inset: ['group-focus'],
+                        },
+                    },
+                    extend:{
+                        height: {
+                            '128': '32rem',
+                        },
+                        px: {
+                            '2,5': '0.6 rem',
+                        },
+                        screens: {
+                        'xm': '0px',
+                        'sm': '640px',
+                        'md': '900px',
+                        'lg1': '1108px',
+                        },
+                    },
+                },
+            }
+    </script>
+
+</head>
+<body class="bg-blanco">
+    <header>
+        <nav class="fixed w-full flex items-center justify-between flex-wrap bg-marino p-3 z-50">
+            <div class="flex items-center flex-shrink-0 text-blanco">
+              <span class="pl-6 text-xl font-bold font-sans2"> UNTREFSCHOOL </span>
+            </div>
+            <div class="block lg:hidden">
+              <button id='boton' class="flex items-center px-3 py-2 border rounded text-blanco hover:text-naranja ">
+                <img src="../assets/icons/menu.png" class="fill-current h-4 w-4">
+              </button>
+            </div>
+            <div id='menu' class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
+              <div class="text-base lg:flex-grow text-blanco font-semibold text-center lg:text-end font-sans1">
+                    <a href="#inicio" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Inicio </a>
+                    <a href="#quienes-somos" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> ¿Quiénes Somos? </a>
+                    <a href="#porq-elegirnos" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> ¿Por qué Elegirnos? </a>
+                    <a href="#propuestas" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Propuestas </a>
+                    <a href="#news" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Noticias </a>
+                    <a href="#footer" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Contacto </a>
+                    <a href="../assets/page/form.html" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Formulario </a>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <main>
+        <!-- Titulo/Inicio de Pagina -->
+        <section id="inicio">
+            <!-- Llame la img de forma arbitraria-->
+            <div class="bg-[url('../assets/img/fondo_libros.jpg')] w-full h-128 bg-cover bg-no-repeat bg-left-bottom bg-fixed flex items-center justify-center">
+                <h1 class="text-blanco font-bold text-2xl md:text-3xl text-center drop-shadow-xl font-sans2"> Instituto de Educación Primaria </h1>
+            </div>
+            <div class="border-t"></div>
+        </section>
+
+        <!-- ¿Quiénes Somos? -->
+        <section class="py-16 px-6" id="quienes-somos">
+            <h2 class="text-negro font-sans1 font-bold text-2xl md:text-3xl mx-2 mb-10 text-center md:text-start">¿Quiénes Somos?</h2>
+
+            <div class="bg-blanco w-full flex flex-col items-center justify-center md:flex-row">
+                <img src="../assets/img/edificioprimario.jpg" alt="edificio_escolar" class="border-2 md:h-96 md:w-2/5">
+                <p class="pt-5 font-sans1 text-base md:text-lg md:pl-10">Somos una institución que se fundamenta en una concepción humanística de la vida, siendo conscientes de que cada niño y adolescente son personas únicas e irrepetibles que se desenvuelven en un contexto social en relación con los otros. La educación formal que ofrecemos al niño y al adolescente busca contribuir al desarrollo de competencias que le permitan construir y transferir a otros escenarios su proyecto personal de vida. Desde su formación académica los acompañamos mostrándoles un camino donde encontrarán los saberes comunes a todos, pero también les señalamos caminos diferentes que les permitirán optar según sus capacidades e intereses, brindándoles las herramientas necesarias para su futuro personal, social y profesional.</p>
+                    <p class="pt-5 font-sans1 text-base md:text-lg md:pl-10">Nuestros pilares son: <br>
+                     Atender al desarrollo de las capacidades mentales y el obrar de cada alumno transformándolas en premisas positivas. 
+                     Brindar una orientación personalizada en la acción educativa. 
+                     Potenciar el desarrollo de la libertad responsable en una sociedad democrática.
+                    </p>
+            </div>
+        </section>
+        <div class="border-t"></div>
+
+        <!-- ¿Por qué elegirnos? -->
+        <section class= "py-16 px-6" id="porq-elegirnos">
+            <h2 class="text-negro font-sans1 font-bold text-2xl md:text-3xl mx-2 mb-10 text-center md:text-end">¿Por qué elegirnos?</h2>
+            <div class="bg-blanco flex flex-col items-center justify-evenly md:flex-row">
+                <p class="pb-5 font-sans1 text-base md:text-lg md:pr-5 md:pl-5">Somos un Instituto capacitado y dinámico, atento a los afectos y a los valores éticos, donde promovemos el aprendizaje estratégico y reflexivo incorporando continuamente nuevas tecnologías y el idioma inglés como segunda lengua. Además nuestros alumnos reconstruyen los saberes, aprenden a aprender y a desaprender, a transferir los conocimientos y a convivir.</p>
+                <p class="pb-5 font-sans1 text-base md:text-lg md:pr-5 md:pl-5">Otorgamos suma importancia a la enseñanza de los valores humanos, entendidos como saberes que vienen de la experiencia. Los directivos son innovadores, retomando las enseñanzas de quienes fueron sus maestros y superándolos. Los docentes se forman en psicología cognitiva para comprender mejor el pensamiento y el aprendizaje humano. Los padres tienen un espacio de participación y el personal no docente es intérprete y transmisor eficiente de las prescripciones resaltando su calidez en el trato con los alumnos y sus familias.</p>
+                <img src="../assets/img/aulaescolar.jpg" alt="aula_escolar" class="border-2 md:h-128 md:w-1/2">
+            </div>
+        </section>
+        <div class="border-t"></div>
+
+        <!-- Propuestas -->
+        <section class="py-20 px-6" id="propuestas">
+            <h2 class="text-negro font-sans1 font-bold text-2xl md:text-3xl mx-2 mb-10 text-center">Propuesta Educativa</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-4 justify-items-center gap-3">
+                <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="../assets/icons/education.png" alt="icono_propuesta1" class="sm:animate-bounce m-auto">Educación</a></div>
+                <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="../assets/icons/psicologia.png" alt="icono_propuesta2" class="sm:animate-bounce m-auto">Psicología</a></div>
+                <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="../assets/icons/science.png" alt="icono_propuesta3" class="sm:animate-bounce m-auto">Ciencia</a></div>
+                <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="../assets/icons/technology.png" alt="icono_propuesta4" class="sm:animate-bounce m-auto">Tecnología</a></div>
+            </div>
+        </section>
+        <div class="border-t"></div>
+        
+        <!-- Últimas Noticias -->
+        <section class="py-20 px-6" id="news">
+            <h2 class="text-negro font-sans1 font-bold text-3xl text-center mb-10">Últimas Noticias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-3">
+                <div class="py-3">
+                    <h2 class="text-verde font-sans2 font-bold text-2xl md:text-3xl mx-2 mb-10 text-center">DEPORTES & TORNEOS</h2>
+                    <p class="font-sans1 text-base md:text-lg">Prestamos una especial atención al área de la Educación Física y Deportes, implementando un plan integral destinado a desarrollar distintas disciplinas del deporte de manera articulada desde los primeros años del Nivel Inicial hasta su egreso en el Nivel Secundario.</p>
+                    <p class="font-sans1 text-base md:text-lg">A través del deporte fomentamos el trabajo en equipo, la solidaridad, la superación, el cuidado de salud y la calidad de vida.</p>
+                    <p class="font-sans1 text-base md:text-lg">Los alumnos realizan campamentos y actividades al aire libre en las que disfrutan la experiencia del contacto con la naturaleza, la convivencia y el aprendizaje a cielo abierto.</p>
+                </div>
+                <div class="py-3">
+                    <h2 class="text-verde font-sans2 font-bold text-2xl md:text-3xl mx-3 mb-10 text-center">VISITAS EDUCATIVAS & BILINGÜES</h2>
+                    <p class="font-sans1 text-base md:text-lg">Articulamos contenidos programáticos con visitas educativas, bilingües y no bilingües, con el propósito de ampliar, reforzar y vivenciar el conocimiento adquirido. </p>
+                    <p class="font-sans1 text-base md:text-lg">Mediante los viajes de estudio bilingües los alumnos tienen la oportunidad de intensificar la práctica de la lengua inglesa. Se realizan viajes en la modalidad Full Immersion a diversos destinos de nuestro país, con la participación de nativos a los efectos de realizar una completa práctica en el uso diario del idioma inglés. </p>
+                </div>
+            </div>
+        </section>
+        <div class="border-t"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gradient-to-r from-marino to-verde" id="footer">
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4">
+            <!-- Redes -->
+            <div class="flex flex-col">
+                <h2 class="font-sans2 text-center text-2xl md:text-3xl text-blanco font-bold mb-6">Redes Sociales</h2>
+                <a target="_blank" href="https://www.instagram.com/untref/?hl=es" class="text-blanco p-1 font-sans1 text-base md:text-lg text-center font-semibold mb-8 hover:text-naranja" rel="noreferrer"><img src="../assets/icons/instagram.png" alt="icono_instagram" class="text-center m-auto w-auto">Instagram</a>
+                <a target="_blank" href="https://twitter.com/UNTREF?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-blanco p-1 font-sans1 text-base md:text-lg text-center font-semibold mb-8 hover:text-naranja" rel="noreferrer"><img src="../assets/icons/twitter.png" alt="icono_twitter" class="text-center m-auto w-auto">Twitter</a>
+                <a target="_blank" href="https://www.facebook.com/untref/?locale=es_LA" class="text-blanco p-1 font-sans1 text-base md:text-lg text-center font-semibold mb-8 hover:text-naranja" rel="noreferrer"><img src="../assets/icons/facebook.png" alt="icono_facebook" class="text-center m-auto w-auto">Facebook</a>
+            </div>
+            <!-- Mapa -->
+            <div class="flex flex-col">
+                <h2 class="font-sans2 text-center text-2xl md:text-3xl text-blanco font-bold mb-6">UntrefSchool</h2>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ujAlRihEdkGF6XSk-_sRt01Yo1k&hl=es_419&ehbc=2E312F" width="260" height="380" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mb-8"></iframe>
+            </div>
+            <!-- Contacto -->
+            <div class="flex flex-col">
+                <h2 class="font-sans2 text-center text-2xl md:text-3xl text-blanco font-bold mb-6">Contacto</h2>
+                <p class="font-sans1 text-center text-2xl text-blanco font-semibold mb-10">Email: UntrefSchool@gmail.com</p>
+                <p class="font-sans1 text-center text-2xl text-blanco font-semibold mb-10">Teléfono: 011 4734-4258</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
