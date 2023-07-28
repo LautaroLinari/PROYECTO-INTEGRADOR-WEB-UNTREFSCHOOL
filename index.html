@@ -35,13 +35,6 @@
                         'sans1': ['Poppins', 'sans-serif'],
                         'sans2': ['Belanosima', 'sans-serif'],
                     },
-                    variants:{
-                    extend: {
-                            display: ['group-focus'],
-                            opacity: ['group-focus'],
-                            inset: ['group-focus'],
-                        },
-                    },
                     extend:{
                         height: {
                             '128': '32rem',
@@ -75,13 +68,13 @@
             </div>
             <div id='menu' class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
               <div class="text-base lg:flex-grow text-blanco font-semibold text-center lg:text-end font-sans1">
-                    <a href="#inicio" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Inicio </a>
-                    <a href="#quienes-somos" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> ¿Quiénes Somos? </a>
-                    <a href="#porq-elegirnos" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> ¿Por qué Elegirnos? </a>
-                    <a href="#propuestas" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Propuestas </a>
-                    <a href="#news" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Noticias </a>
-                    <a href="#footer" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Contacto </a>
-                    <a href="./assets/page/form.html" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja lg:p-2"> Formulario </a>
+                    <a href="#inicio" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja rounded lg:p-2"> Inicio </a>
+                    <a href="#quienes-somos" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja rounded lg:p-2"> ¿Quiénes Somos? </a>
+                    <a href="#porq-elegirnos" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja rounded lg:p-2"> ¿Por qué Elegirnos? </a>
+                    <a href="#propuestas" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja rounded lg:p-2"> Propuestas </a>
+                    <a href="#news" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja rounded lg:p-2"> Noticias </a>
+                    <a href="#footer" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja rounded lg:p-2"> Contacto </a>
+                    <a href="./assets/page/form.html" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-naranja rounded lg:p-2"> Formulario </a>
               </div>
             </div>
           </nav>
@@ -129,7 +122,7 @@
         <section class="py-20 px-6" id="propuestas">
             <h2 class="text-negro font-sans1 font-bold text-2xl md:text-3xl mx-2 mb-10 text-center">Propuesta Educativa</h2>
             <div class="grid grid-cols-1 sm:grid-cols-5 justify-items-center gap-3">
-                <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="./assets/icons/evaluacion.png" alt="icono_propuesta1" class="sm:animate-bounce m-auto">Pruebas Diagnóstico</a></div>
+                <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="./assets/icons/evaluacion.png" alt="icono_propuesta1" class="sm:animate-bounce m-auto">Diagnósticos</a></div>
                 <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="./assets/icons/psicologia.png" alt="icono_propuesta2" class="sm:animate-bounce m-auto">Neurociencia</a></div>
                 <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="./assets/icons/technology.png" alt="icono_propuesta3" class="sm:animate-bounce m-auto">Uso de Tecnología</a></div>
                 <div class="py-3"><a href="#" rel="noreferrer" class="text-center font-sans2 md:text-lg text-base font-semibold hover:text-naranja"><img src="./assets/icons/game.png" alt="icono_propuesta4" class="sm:animate-bounce m-auto">Aprender Jugando</a></div>
@@ -140,7 +133,7 @@
         
         <!-- Últimas Noticias -->
         <section class="py-20 px-6" id="news">
-            <h2 class="text-negro font-sans1 font-bold text-3xl text-center mb-10">Últimas Noticias</h2>
+            <h2 class="text-negro font-sans1 font-bold text-2xl md:text-3xl text-center mb-10">Últimas Noticias</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-3">
                 <div class="py-3">
                     <h2 class="text-verde font-sans2 font-bold text-2xl md:text-3xl mx-2 mb-10 text-center">DEPORTES & TORNEOS</h2>
@@ -155,17 +148,17 @@
                 </div>
                 <div class="py-3">
                     <h2 class="text-verde font-sans2 font-bold text-2xl md:text-3xl mx-3 mb-10 text-center">EQUIPO DE AYUDA</h2>
-                    <p class="mb-8 text-lg font-medium leading-tight font-sans1 text-negro">El Equipo de Apoyo Educativo es una estrategia inclusiva que tiene el propósito de entregar apoyos adicionales a los estudiantes que presentan Necesidades Educativas Especiales de carácter permanente (asociadas a discapacidad) o transitorio que asisten a nuestro establecimiento.</p>
+                    <p class="mb-8 text-base md:text-lg font-medium leading-tight font-sans1 text-negro">El Equipo de Apoyo Educativo es una estrategia inclusiva que tiene el propósito de entregar apoyos adicionales a los estudiantes que presentan Necesidades Educativas Especiales de carácter permanente (asociadas a discapacidad) o transitorio que asisten a nuestro establecimiento.</p>
                     <div class="grid grid-cols-2 justify-items-center">
                         <div class="text-center">
-                            <img src="./assets/img/janedoe.jpg" class="mx-auto mb-4 w-48 rounded-lg" alt="foto_avatar1"/>
-                            <h5 class="mb-2 text-xl font-bold leading-tight font-sans1 text-negro">Jane Doe</h5>
-                            <p class="font-sans1 text-negro font-semibold">Personal de Apoyo</p>
+                            <img src="./assets/img/janedoe.jpg" class="mx-auto mb-4 w-28 md:w-48 rounded-lg" alt="foto_avatar1"/>
+                            <h5 class="mb-2 text-base md:text-xl font-bold leading-tight font-sans1 text-negro">Jane Doe</h5>
+                            <p class="font-sans1 text-base md:text-xl text-negro font-semibold">Personal de Apoyo</p>
                         </div>
                         <div class="text-center">
-                            <img src="./assets/img/johnclark.jpg" class="mx-auto mb-4 w-40 rounded-lg" alt="foto_avatar2"/>
-                            <h5 class="mb-2 text-xl font-bold leading-tight font-sans1 text-negro">John Clark</h5>
-                            <p class="font-sans1 text-negro font-semibold">Psicopedagogo</p>
+                            <img src="./assets/img/johnclark.jpg" class="mx-auto mb-4 w-28 md:w-40 rounded-lg" alt="foto_avatar2"/>
+                            <h5 class="mb-2 text-base md:text-xl font-bold leading-tight font-sans1 text-negro">John Clark</h5>
+                            <p class="font-sans1 text-base md:text-xl text-negro font-semibold">Psicopedagogo</p>
                         </div>
                     </div>
                 </div>
@@ -197,8 +190,8 @@
             <!-- Contacto -->
             <div class="flex flex-col">
                 <h2 class="font-sans2 text-center text-2xl md:text-3xl text-blanco font-bold mb-6">Contacto</h2>
-                <p class="font-sans1 text-center text-2xl text-blanco font-semibold mb-10">Email: UntrefSchool@gmail.com</p>
-                <p class="font-sans1 text-center text-2xl text-blanco font-semibold mb-10">Teléfono: 011 4734-4258</p>
+                <p class="font-sans1 text-center text-base md:text-2xl text-blanco font-semibold mb-10">Email: UntrefSchool@gmail.com</p>
+                <p class="font-sans1 text-center text-base md:text-2xl text-blanco font-semibold mb-10">Teléfono: 011 4734-4258</p>
             </div>
         </div>
     </footer>

@@ -41,7 +41,7 @@ header nav ul li a{
     color: #EFF5F5;
     font-size: 20px;
     padding: 1rem;
-    border-radius: 25px;
+    border-radius: 7px;
 }
 
 header nav ul li a:hover{
