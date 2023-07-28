@@ -96,7 +96,6 @@ textarea{
 
 @media (max-width:480px){
     form{
-      width:100%;
+        width:90%;
     }
 }
-  
