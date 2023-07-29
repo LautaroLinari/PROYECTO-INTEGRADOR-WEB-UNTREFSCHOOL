@@ -6,7 +6,7 @@
 -GIT.
 -GITHUB.
 -TAILWIND.
--JAVSCRIPT.
+-JAVASCRIPT.
 
 #Es el primer proyecto integrador de la Diplomatura Frontend de UNTREF:
 
