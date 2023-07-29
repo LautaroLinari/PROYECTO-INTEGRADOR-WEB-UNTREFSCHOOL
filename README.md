@@ -10,3 +10,5 @@
 
 #Es el primer proyecto integrador de la Diplomatura Frontend de UNTREF:
 #El objetivo era realizar una web responsive con todos los conocimientos adquiridos hasta el momento, adaptable a mobile, tablet, ipad, etc y consistia en un Instituto de educacion primaria donde habia que cumplir determinadas pautas.
+
+#LINK DEL PROYECTO: https://proyecto-integrador-web-untrefschool.vercel.app/
